@@ -116,7 +116,7 @@ set laststatus=2
 colorscheme elflord
 
 """""""""
-" Vim-Snippets setting.
+" Vim-Snippets setting. TODO Change this
 """""""""
 let g:snips_author = 'Vijayvithal Jahagirdar'
 let g:snips_email = 'jvs@dyumnin.com'
