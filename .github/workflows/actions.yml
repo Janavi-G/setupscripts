@@ -4,8 +4,9 @@ on: [push]
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
       - run: sudo apt install -y --no-install-recommends vim zsh tmux
-      - run: bash setup.sh
-      - run: bash setup.sh
+      - run: zsh setup.sh
+      - run: zsh setup.sh
