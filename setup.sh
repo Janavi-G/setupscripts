@@ -1,6 +1,6 @@
 #! env zsh
 #
-apt install git curl
+apt install git curl cmake
 #Install Vim plugins
 if [[ ! -f ~/.vimrc ]]; then
 	# Install default set of plugins and vimrc
@@ -8,6 +8,7 @@ if [[ ! -f ~/.vimrc ]]; then
 	cp vimrc ~/.vimrc
 	pip3 install rope ropevim
 	vim -c PluginInstall -c ":qall"
+        cd .vim/bundle/YouCompleteMe && python3 install.py
 	# install rope
 fi
 
