@@ -26,3 +26,8 @@ if [[ ! -f ~/.tmux.conf ]]; then
 	cp tmuxconf ~/.tmux.conf
 fi
 
+# Install Global Git hooks
+git config --global core.hooksPath ~/.gitglobalhooks
+mkdir ~/.gitglobalhooks
+cp githooks/* ~/.gitglobalhooks/
+chmod +x  ~/.gitglobalhooks/
