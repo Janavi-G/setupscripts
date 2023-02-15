@@ -31,3 +31,4 @@ git config --global core.hooksPath ~/.gitglobalhooks
 mkdir ~/.gitglobalhooks
 cp githooks/* ~/.gitglobalhooks/
 chmod +x  ~/.gitglobalhooks/
+pip3 install pre-commit
