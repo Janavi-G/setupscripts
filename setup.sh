@@ -8,7 +8,7 @@ if [[ ! -f ~/.vimrc ]]; then
 	cp vimrc ~/.vimrc
 	pip3 install rope ropevim autopep8 flake8
 	vim -c PluginInstall -c ":qall"
-        cd .vim/bundle/YouCompleteMe && python3 install.py
+        cd ~/.vim/bundle/YouCompleteMe && python3 install.py && cd -
 	# install rope
 fi
 
