@@ -178,3 +178,5 @@ highlight BlankLine ctermbg=NONE ctermfg=NONE cterm=underline,bold
 match  BlankLine /^\s*\n.*/
 au BufNewFile,BufRead Jenkinsfile setf groovy
 set modeline
+" Use gF to open files from cdns error logs.
+set isfname+=^,
